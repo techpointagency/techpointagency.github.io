@@ -113,3 +113,15 @@ code {
         border-bottom-color: inherit;
     }
 }
+
+@layer base {
+  /* Remove "Made with Emergent" badge */
+  [data-emergent-badge],
+  .emergent-badge,
+  a[href*="emergent"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+}
